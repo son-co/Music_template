@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music app</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAMtJREFUSEvtlusNgzAMhI9N2ARGYRPKJrBJu0k7CdVFICHLsUKVByqxlD9I9hdfzgkNCkVTiIsKzqb8X0rdA1iFhB8Ab35L2bGEkjcBeFRwNkefkfqpGGUBMBu7NXNCzWUaxQOPYq5iYDcCIiglly/MnFCpWUR2/dqInULe51XLcZsNBfukZo1RAbNu0jNODtbOch+lQemY97Qvx+WFSh39cjmCaaCz5xVF6vuBWwBc2kVBs8hwD/oPOcl/BExDXsLV0UfGKlg7zib3F013QR//xF/JAAAAAElFTkSuQmCC"
+        type="image/x-icon">
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./css/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Link icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="main">
+            <div class="playlist">
+                <h2>Playlist</h2>
+                <div class="title">
+                    <ul class="list-title">
+                        <li class="item-title active">
+                            <span class="icon">
+                                <i class='bx bxs-music'></i>
+                            </span>
+                            <span class="text-title">Playlist</span>
+                        </li>
+                        <li class="item-title">
+                            <span class="icon">
+                                <i class='bx bx-radio-circle'></i>
+                            </span>
+                            <span class="text-title">Last Listening</span>
+                        </li>
+                        <li class="item-title">
+                            <span class="icon">
+                                <i class='bx bx-radio-circle '></i>
+                                <!-- <i class='bx bx-pause-circle'></i> -->
+                            </span>
+                            <span class="text-title">Recommended</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="playlist-songs">
+                    <div class="songs">
+                        <div class="number-song">01</div>
+                        <div class="thumb" style="background-image: url(https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/3/9/8/d/398dd75c920409a73359c8a62f02a166.jpg);"></div>
+                        <div class="title-song">
+                            <div class="name-song">Pháo hồng</div>
+                            <div class="singer">Đạt Long Vinh</div>
+                        </div>
+                        <div class="action">
+                            <i class='bx bxs-caret-right-circle radio-check'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overview">
+                <div class="header">
+                    <div class="nav">
+                        <ul class="category">
+                            <li class="nav-item active">Discover</li>
+                            <li class="nav-item">My Library</li>
+                            <li class="nav-item">RADIO</li>
+
+                        </ul>
+                        <div class="search">
+                            <div class="search-item">
+                                <div class="search-icon">
+                                    <i class='bx bx-search'></i>
+                                </div>
+                                <input type="text" name="" id="" placeholder="Search.........">
+                            </div>
+                        </div>
+                        <div class="login">
+                            <i class='bx bxs-user-circle'></i>
+                        </div>
+                    </div>
+
+                    <div class="info-singer">
+                        <div class="intimate">
+                            <h1 class="name-singer">Alan Walker</h1>
+                            <p class="title-singer">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus harum, labore ipsum ea laborum excepturi ullam assumenda reprehenderit veniam. Atque rem fugit sint ab, dolore saepe facilis soluta! Rerum, veniam?
+                            </p>
+                            <div class="action-singer">
+                                <button class="play">Play</button>
+                                <button class="follow">Follow</button>
+                            </div>
+                        </div>
+                        <img src="./img/alanwalker-removebg.png" class="img-singer" alt="">
+                    </div>
+                </div>
+                <div class="popular-song ">
+                    <h2>Popular Song</h2>
+                    <div class="list-popular owl-carousel owl-theme">
+                        <div class="item-popular">
+                            <div class="theme-song">
+                                <img src="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/3/9/8/d/398dd75c920409a73359c8a62f02a166.jpg" alt="">
+                            </div>
+                            <div class="name">Pháo hồng</div>
+                            <div class="singer">Đạt Long Vinh</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="popular-artists">
+                    <h2>Popular Artists</h2>
+                    <div class="list-popular_artist owl-carousel owl-theme">
+                        <div class="artists-item">
+                            <img src="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/3/9/8/d/398dd75c920409a73359c8a62f02a166.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="nav-playsong">
+                <div class="control-song">
+                    <div class="icon-song">
+                        <i class='bx bxl-deezer'></i>
+                    </div>
+                    <div class="thumb-song">
+                        <img class="img-play" src="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/cover/3/9/8/d/398dd75c920409a73359c8a62f02a166.jpg" alt="">
+                    </div>
+                    <div class="body">
+                        <div class="title-playsong">
+                            <div class="name-song">Pháo hồng</div>
+                            <div class="singer">Đạt Long Vinh</div>
+                        </div>
+                    </div>
+
+                    <div class="controller-song">
+                        <div class="icon-music">
+                            <i class='bx bxs-music'></i>
+                        </div>
+                        <div class="prev-song">
+                            <ion-icon name="play-skip-back"></ion-icon>
+                        </div>
+                        <div class="play-song">
+                            <i class='bx bx-play autoplay'></i>
+                        </div>
+                        <div class="next-song">
+                            <ion-icon name="play-skip-forward"></ion-icon>
+                        </div>
+                        <div class="download-song">
+                            <ion-icon name="cloud-download"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="control-time-song">
+                        <div class="time-default">0.00</div>
+                        <input type="range" name="" id="time-song" value="0" min="0" max="100" step="1">
+                        <audio src="" class="audio"></audio>
+                        <div class="time-end">0.00</div>
+                    </div>
+                    <div class="volume-song">
+                        <div class="volume-icon">
+                            <ion-icon name="volume-high"></ion-icon>
+                        </div>
+                        <input type="range" name="" id="volume-value" value="100" min="0" max="100" step="1">
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/basic.js"></script>
+
+<script src="./js/main.js"></script>
+
+</html>
